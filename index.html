@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./src/styles/style.css">
+	<title>Taekwon-Do I.T.F. | Formas</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Trivias</a></li>
+				<li><a href="#">Generador Random</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section>
+		<form action="">	
+			<h3>Elige el grado</h3>		
+			<input type="radio" id="1erDan" name="grado" value="1" checked>
+			<label for="html">Hasta 1er Dan</label><br>
+			<input type="radio" id="2doDan" name="grado" value="2">
+			<label for="css">Hasta 2do Dan</label><br>
+			<input type="radio" id="3erDan" name="grado" value="3">
+			<label for="javascript">Hasta 3er Dan</label><br>	
+			<input type="radio" id="4erDan" name="grado" value="4">
+			<label for="javascript">Hasta 4to Dan</label>
+		
+			<h3>Elige la cantidad</h3>		
+			<input type="radio" id="1formas" name="cantidad" value="1" checked>
+			<label for="html">Una forma</label><br>
+			<input type="radio" id="2formas" name="cantidad" value="2">
+			<label for="css">Dos formas</label><br>
+			<input type="radio" id="3formas" name="cantidad" value="3">
+			<label for="javascript">Tres formas</label>	
+			<br>
+			<br>
+			<button type="button" onclick="elegirFormas()">Elige las formas</button>
+		</form>
+
+		<p id="result"></p>
+	</section>
+	<script src="./src/script/formas.js"></script>
+	<footer>
+		<p>Sitio creado por <a href="https://github.com/Jeffuy">JeffUy</a></p>
+	</footer>
+</body>
+</html>
