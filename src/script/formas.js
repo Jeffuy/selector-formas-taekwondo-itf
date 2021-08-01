@@ -77,20 +77,20 @@ function elegirFormas() {
     random3 = Math.floor(Math.random() * lista.length);
   }
 
-  if (cantidad == 1) {
+  if (cantidad == 2) {
     eleccion = lista[random];
     result.innerText = `La forma elegida es ${eleccion}`;
-  } else if (cantidad == 2) {
+  } else if (cantidad == 3) {
     eleccion = `${lista[random]} y ${lista[random2]}`;
     result.innerText = `Las formas elegidas son ${eleccion}`;
-  } else if (cantidad == 3) {
+  } else if (cantidad == 4) {
     eleccion = `${lista[random]} , ${lista[random2]} y ${lista[random3]}`;
     result.innerText = `Las formas elegidas son ${eleccion}`;
   } else if (cantidad == 0) {
     random = Math.floor(Math.random() * listaSoloGrado.length);
     eleccion = `${listaSoloGrado[random]}`;
     result.innerText = `La forma elegida es ${eleccion}`;
-  } else if (cantidad == 4) {
+  } else if (cantidad == 1) {
     random = Math.floor(Math.random() * listaSoloGrado.length);
     while (listaSoloGrado[random] == lista[random2]) {
       random = Math.floor(Math.random() * listaSoloGrado.length);
