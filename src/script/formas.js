@@ -13,68 +13,11 @@ const formasPrimero = [
   "Kwang Gae",
 ];
 
-const formasSegundo = [
-  "Chon-Ji",
-  "Dangun",
-  "Dosan",
-  "Won Hyo",
-  "Yulgok",
-  "Joon Gun",
-  "Toi Gye",
-  "Hwarang",
-  "Choong Moo",
-  "Gae Baek",
-  "Po Eun",
-  "Kwang Gae",
-  "Eu Iam",
-  "Choong Jang",
-  "Juche",
-];
+const formasSegundo = formasPrimero.concat("Eu Iam", "Juche", "Choong Jang")
 
-const formasTercero = [
-  "Chon-Ji",
-  "Dangun",
-  "Dosan",
-  "Won Hyo",
-  "Yulgok",
-  "Joon Gun",
-  "Toi Gye",
-  "Hwarang",
-  "Choong Moo",
-  "Gae Baek",
-  "Po Eun",
-  "Kwang Gae",
-  "Eu Iam",
-  "Choong Jang",
-  "Juche",
-  "Sam Il",
-  "Choi Jong",
-  "Yoo Sin",
-];
+const formasTercero = formasSegundo.concat("Yoo Sin", "Choi Jong", "Sam Il")  
 
-const formasCuarto = [
-  "Chon-Ji",
-  "Dangun",
-  "Dosan",
-  "Won Hyo",
-  "Yulgok",
-  "Joon Gun",
-  "Toi Gye",
-  "Hwarang",
-  "Choong Moo",
-  "Gae Baek",
-  "Po Eun",
-  "Kwang Gae",
-  "Eu Iam",
-  "Choong Jang",
-  "Juche",
-  "Sam Il",
-  "Choi Jong",
-  "Yoo Sin",
-  "Moon Moo",
-  "Ul Ji",
-  "Yong Gae",
-];
+const formasCuarto = formasTercero.concat("Moon Moo", "Ul Ji", "Yon Gae")  
 
 function grado() {
   let grado = document.querySelector('input[name="grado"]:checked').value;
