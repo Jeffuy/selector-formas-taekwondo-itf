@@ -1,3 +1,9 @@
+html {
+	height: 100%;
+	background: rgb(255,255,255);
+	background: linear-gradient(30deg, rgba(255,255,255,0.3) 0%, rgba(100,85,127,0.5611286751028537) 100%);
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -7,6 +13,7 @@ nav ul {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	margin-right: 40px;
 }
 
 .botones-container {
@@ -21,7 +28,7 @@ nav ul {
 	height: inherit;
 }
 
-#resultadoRed, #resultadoBlue {	
+#resultadoRed, #resultadoBlue {
 	margin-top: 0;
 	text-align: center;
 	font-size: 60px;
