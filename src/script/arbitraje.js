@@ -39,12 +39,14 @@ function warning(color) {
 function discount(color) {
 	if (color == "red") {
 		redDiscount += 1;
+		redScore(-1);
 		if (redDiscount == 3) {
 			redTotal = "DQ";
 			endFight();
 		}
 	} else if (color == "blue") {
 		blueDiscount += 1;
+		blueScore(-1);
 		if (blueDiscount == 3) {
 			blueTotal = "DQ";
 			endFight();
