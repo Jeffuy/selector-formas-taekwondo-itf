@@ -1,0 +1,53 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.botones-container {
+	display: flex;
+	justify-content: center;
+	height: 60vh;
+}
+
+.botones-container ul {
+	display: flex;
+	flex-direction: column;
+	height: inherit;
+}
+
+#resultadoRed, #resultadoBlue {	
+	margin-top: 0;
+	text-align: center;
+	font-size: 60px;
+}
+
+#resultadoRed {
+	background-color: red;
+	margin-right: 20px;
+}
+
+#resultadoBlue {
+	background-color: blue;
+	margin-right: 50px;
+}
+
+.red {
+	margin-right: 20px;
+	background-color: red;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.blue {
+	margin-right: 50px;
+	background-color: blue;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
