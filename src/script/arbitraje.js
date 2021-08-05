@@ -7,23 +7,25 @@ let blueDiscount = 0;
 let fightStatus = "ended";
 
 function startFight() {
-	const resultRed = document.getElementById("resultadoRed");
-	const resultBlue = document.getElementById("resultadoBlue");
-	const status = document.getElementById("status");
+	if (fightStatus=="ended"){
+		const resultRed = document.getElementById("resultadoRed");
+		const resultBlue = document.getElementById("resultadoBlue");
+		const status = document.getElementById("status");
 
 
-	resultRed.innerText = "";
-	resultBlue.innerText = "";
-	status.innerText = "Combate iniciado"
+		resultRed.innerText = "";
+		resultBlue.innerText = "";
+		status.innerText = "Combate iniciado"
 
-	fightStatus = "running";
-	redTotal = 0;
-	blueTotal = 0;
-	redWarning = 0;
-	blueWarning = 0;
-	redDiscount = 0;
-	blueDiscount = 0;
-}
+		fightStatus = "running";
+		redTotal = 0;
+		blueTotal = 0;
+		redWarning = 0;
+		blueWarning = 0;
+		redDiscount = 0;
+		blueDiscount = 0;
+	};
+};
 
 function warning(color) {
 	if (fightStatus == "running") {
