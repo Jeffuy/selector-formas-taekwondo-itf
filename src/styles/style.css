@@ -3,10 +3,43 @@ html {
 	background: rgb(255,255,255);
 	background: linear-gradient(30deg, rgba(255,255,255,0.3) 0%, rgba(100,85,127,0.5611286751028537) 100%);
 }
+body {
+	margin: 0;
+	padding: 0;
+}
 
 nav ul {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	margin-right: 40px;
+	width: 100%;
+	list-style: none;
+	background-color: black;
+	margin-top: 0;
+	height: 40px;
+	line-height: 2.2em;
+}
+
+nav ul a:visited {
+	color: white;
+}
+
+footer {
+	background-color: black;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+	color: white;
+	line-height: 50%;
+}
+
+footer p {
+	text-align: right;
+	margin-right: 10px;
+}
+
+footer a:visited {
+	text-decoration: none;
+	color: white;
 }
