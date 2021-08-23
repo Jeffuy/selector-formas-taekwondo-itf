@@ -3,48 +3,82 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./src/styles/arbitraje.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
 	<title>Arbitraje</title>
 </head>
 <body>
 	<header>
-		<nav>
-			<ul>
-				<!--<li><a href="#">Trivias</a></li> -->
-				<li><a href="index.html">Forma designada</a></li>
-				<li><a href="arbitraje.html">Arbitraje lucha</a></li>
-				<li><a href="challenge.html">Challenge</a></li>
-			</ul>
-		</nav>
-	</header>
-	<p id="status">Combate terminado</p>
-	<section class="botones-container">
-		<div class="botones">
-			<p id="resultadoRed"></p>
-			<button class="red" type="button" onclick="redScore(1)">Golpe de puño</button>
-			<button class="red" type="button" onclick="redScore(2)">Patada zona media</button>
-			<button class="red" type="button" onclick="redScore(3)">Patada zona alta</button>
-			<button class="red" type="button" onclick="warning(`red`)">Advertencia</button>
-			<button class="red" type="button" onclick="discount(`red`)">Punto en contra</button>
-			<button class="red" type="button" onclick="redScore(-1)">Borrar punto</button>
-			<button class="red" id="start-end-button" type="button" onclick="startFight()">Iniciar Combate</button>
-		</div>
-		<div class="botones">
-			<p id="resultadoBlue"></p>
-			<button class="blue" type="button" onclick="blueScore(1)">Golpe de puño</button>
-			<button class="blue" type="button" onclick="blueScore(2)">Patada zona media</button>
-			<button class="blue" type="button" onclick="blueScore(3)">Patada zona alta</button>
-			<button class="blue" type="button" onclick="warning(`blue`)">Advertencia</button>
-			<button class="blue" type="button" onclick="discount(`blue`)">Punto en contra</button>
-			<button class="blue" type="button" onclick="blueScore(-1)">Borrar punto</button>
-			<button class="blue" id="start-end-button" type="button" onclick="endFight()">Terminar Combate</button>
-		</div>
-		</section>
 
-	<footer>
-		<p>Sitio creado por <a href="https://github.com/Jeffuy">JeffUy</a></p>
+			<nav style="background-color: black;">
+				<div class="container-fluid"></div>
+					<ul class="nav nav-tabs">
+						<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="color: white">Arbitraje</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">Lucha</a></li>
+							<li><a class="dropdown-item" href="#">Forma</a></li>
+						</ul>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link" style="color: white" href="index.html">Forma designada</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" style="color: white" href="challenge.html">Desafíos</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+	</header>
+
+	<section>
+		<div class="container">
+			<h3 class="mt-2 text-center" id="status">Combate terminado</h3>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-6">
+					<p class="text-center" style="font-size: 30px; background-color: red;" id="resultadoRed">0</p></div>
+				<div class="col-6">
+					<p class="text-center" style="font-size: 30px; background-color: blue;" id="resultadoBlue">0</p></div>
+			</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-6 mb-2">
+					<div class="btn-group-vertical">
+
+						<button class="btn btn-danger btn-lg btn-block mt-3 mb-2" type="button" onclick="redScore(1)">Golpe de puño</button>
+						<button class="btn btn-danger btn-lg btn-block mb-2" type="button" onclick="redScore(2)">Patada zona media</button>
+						<button class="btn btn-danger btn-lg btn-block mb-2" type="button" onclick="redScore(3)">Patada zona alta</button>
+						<button class="btn btn-danger btn-lg btn-block mb-2" type="button" onclick="warning(`red`)">Advertencia</button>
+						<button class="btn btn-danger btn-lg btn-block mb-2" type="button" onclick="discount(`red`)">Punto en contra</button>
+						<button class="btn btn-danger btn-lg btn-block mb-2" type="button" onclick="redScore(-1)">Borrar punto</button>
+						<button class="btn btn-dark btn-lg btn-block mt-5" id="start-end-button" type="button" onclick="startFight()">Start</button>
+					</div>
+				</div>
+				<div class="col-6 mb-2">
+					<div class="btn-group-vertical">
+
+						<button class="btn btn-primary btn-lg btn-block mt-3 mb-2" type="button" onclick="blueScore(1)">Golpe de puño</button>
+						<button class="btn btn-primary btn-lg btn-block mb-2" type="button" onclick="blueScore(2)">Patada zona media</button>
+						<button class="btn btn-primary btn-lg btn-block mb-2" type="button" onclick="blueScore(3)">Patada zona alta</button>
+						<button class="btn btn-primary btn-lg btn-block mb-2" type="button" onclick="warning(`blue`)">Advertencia</button>
+						<button class="btn btn-primary btn-lg btn-block mb-2" type="button" onclick="discount(`blue`)">Punto en contra</button>
+						<button class="btn btn-primary btn-lg btn-block mb-2" type="button" onclick="blueScore(-1)">Borrar punto</button>
+						<button class="btn btn-dark btn-lg btn-block mt-5" id="start-end-button" type="button" onclick="endFight()">End</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="fixed-bottom bg-dark text-center text-lg-start">
+		<div class="container">
+			<p style="color:white">Sitio creado por <a target="_blank" href="https://github.com/Jeffuy">JeffUy</a></p>
+		</div>
 	</footer>
 	<script src="./src/script/arbitraje.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 </html>
