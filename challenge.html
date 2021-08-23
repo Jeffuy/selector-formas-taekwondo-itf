@@ -5,19 +5,30 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="./src/styles/style.css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 	<title>Taekwon-Do I.T.F. | Challenge</title>
 </head>
 
 <body>
 	<header>
-		<nav>
-			<ul>
-				<!--<li><a href="#">Trivias</a></li> -->
-				<li><a href="index.html">Forma designada</a></li>
-				<li><a href="arbitraje.html">Arbitraje lucha</a></li>
-				<li><a href="challenge.html">Challenge</a></li>
-			</ul>
+		<nav style="background-color: black;">
+			<div class="container-fluid"></div>
+				<ul class="nav nav-tabs">
+					<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="color: white">Arbitraje</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="arbitraje.html">Lucha</a></li>
+						<li><a class="dropdown-item" href="#">Forma</a></li>
+					</ul>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" style="color: white" href="index.html">Formas</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" style="color: white" href="challenge.html">Desafíos</a>
+					</li>
+				</ul>
+			</div>
 		</nav>
 	</header>
 
@@ -30,10 +41,13 @@
 
 		<p id="result"></p>
 	</section>
-	<script src="./src/script/challenge.js"></script>
-	<footer>
-		<p>Sitio creado por <a href="https://github.com/Jeffuy">JeffUy</a></p>
+	<footer class="fixed-bottom bg-dark text-center text-lg-start">
+		<div class="container">
+			<p style="color:white">Sitio creado por <a target="_blank" href="https://github.com/Jeffuy">JeffUy</a></p>
+		</div>
 	</footer>
+	<script src="./src/script/challenge.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 
 </html>
